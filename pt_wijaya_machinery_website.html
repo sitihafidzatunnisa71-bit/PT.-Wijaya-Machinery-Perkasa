@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Wijaya Machinery - Solusi Mesin & Peralatan Industri Terpercaya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0F2C59',
+                            orange: '#F86F03',
+                            lightbg: '#F8FAFC',
+                            accent: '#1E3E62',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(15, 44, 89, 0.92) 0%, rgba(15, 44, 89, 0.75) 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-brand-lightbg antialiased leading-relaxed">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-brand-blue text-slate-300 text-xs py-2 px-4 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fas fa-phone text-brand-orange mr-2"></i>+62 (21) 555-8989</span>
+                <span><i class="fas fa-envelope text-brand-orange mr-2"></i>info@wijayamachinery.co.id</span>
+                <span class="hidden md:inline"><i class="fas fa-clock text-brand-orange mr-2"></i>Senin - Jumat: 08:00 - 17:00 WIB</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-brand-orange transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-brand-orange transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-brand-orange transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 bg-brand-blue rounded-lg flex items-center justify-center text-brand-orange font-bold text-2xl shadow-md group-hover:bg-brand-orange group-hover:text-white transition duration-300">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-xl tracking-tight text-brand-blue">WIJAYA</span>
+                    <span class="text-xs tracking-widest text-brand-orange font-bold -mt-1">MACHINERY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-700">
+                <a href="#home" class="hover:text-brand-orange transition duration-150">Beranda</a>
+                <a href="#about" class="hover:text-brand-orange transition duration-150">Tentang Kami</a>
+                <a href="#products" class="hover:text-brand-orange transition duration-150">Produk & Layanan</a>
+                <a href="#achievements" class="hover:text-brand-orange transition duration-150">Keunggulan</a>
+                <a href="#contact" class="hover:text-brand-orange transition duration-150">Kontak</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center">
+                <a href="#contact" class="bg-brand-orange hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg transition duration-200 flex items-center">
+                    <i class="fas fa-paper-plane mr-2 text-sm"></i> Minta Penawaran
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 hover:text-brand-orange focus:outline-none p-2">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-lg">
+            <a href="#home" class="block font-medium text-slate-700 hover:text-brand-orange">Beranda</a>
+            <a href="#about" class="block font-medium text-slate-700 hover:text-brand-orange">Tentang Kami</a>
+            <a href="#products" class="block font-medium text-slate-700 hover:text-brand-orange">Produk & Layanan</a>
+            <a href="#achievements" class="block font-medium text-slate-700 hover:text-brand-orange">Keunggulan</a>
+            <a href="#contact" class="block font-medium text-slate-700 hover:text-brand-orange">Kontak</a>
+            <a href="#contact" class="block text-center bg-brand-orange text-white py-2.5 rounded-lg font-semibold shadow">Minta Penawaran</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-slate-900 text-white min-h-[580px] flex items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80');">
+        <div class="absolute inset-0 gradient-overlay"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 bg-brand-orange/20 border border-brand-orange text-brand-orange px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fas fa-award"></i>
+                    <span>Penyedia Mesin Industri Terkemuka sejak 2008</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                    Solusi Mesin Industri Terpercaya & Berkinerja Tinggi
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 mb-8 font-light">
+                    PT. Wijaya Machinery menyediakan perlengkapan pabrik, mesin CNC, alat konstruksi, dan layanan purna jual presisi tinggi untuk mendorong efisiensi manufaktur Indonesia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-3.5 rounded-lg font-bold text-center shadow-lg transition duration-200">
+                        Jelajahi Produk
+                    </a>
+                    <a href="#contact" class="border border-white/40 hover:bg-white/10 text-white px-8 py-3.5 rounded-lg font-semibold text-center transition duration-200 backdrop-blur-sm">
+                        Konsultasi Gratis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image Grid -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Pabrik Industri PT Wijaya Machinery" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/800x600/0F2C59/FFFFFF?text=Wijaya+Machinery+Factory'">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 z-20 bg-brand-blue text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs border-4 border-white">
+                        <div class="text-3xl font-extrabold text-brand-orange mb-1">15+ Tahun</div>
+                        <p class="text-xs text-slate-300">Pengalaman melayani ratusan perusahaan industri nasional dan multinasional.</p>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Tentang PT. Wijaya Machinery</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-6">Mitra Strategis Pertumbuhan Industri Manufaktur</h3>
+                    <p class="text-slate-600 mb-6">
+                        Didirikan dengan komitmen terhadap kualitas dan ketepatan presisi, **PT. Wijaya Machinery** adalah perusahaan penyedia peralatan berat dan mesin manufaktur terdepan di Indonesia. Kami tidak hanya menjual peralatan, melainkan memberikan solusi teknis secara menyeluruh.
+                    </p>
+                    <p class="text-slate-600 mb-8">
+                        Dengan dukungan tim teknisi tersertifikasi, layanan perawatan berkala, serta suku cadang orisinal, kami memastikan seluruh lini produksi operasional Anda berjalan tanpa hambatan.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-100 text-brand-orange flex items-center justify-center font-bold flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Standar ISO Internasional</h4>
+                                <p class="text-xs text-slate-500">Jaminan mutu dan standar keselamatan produk tinggi.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-100 text-brand-orange flex items-center justify-center font-bold flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Layanan Purna Jual 24/7</h4>
+                                <p class="text-xs text-slate-500">Dukungan teknis cepat tanggap untuk kebutuhan Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Services Showcase -->
+    <section id="products" class="py-20 bg-brand-lightbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Produk & Layanan Kami</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Solusi Peralatan Industri Berteknologi Tinggi</h3>
+                <p class="text-slate-600">Pilihan mesin berkualitas tinggi yang dirancang untuk meningkatkan produktivitas dan efisiensi lini manufaktur Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden group h-56">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Mesin CNC & Lathe Presisi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0F2C59/FFFFFF?text=Mesin+CNC'">
+                        <span class="absolute top-4 left-4 bg-brand-blue text-white text-xs px-3 py-1 rounded-full font-semibold">Kategori Utama</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-brand-blue mb-2">Mesin CNC & Bubut Presisi</h4>
+                            <p class="text-slate-600 text-sm mb-4">Mesin perkakas otomatis berbasis komputer untuk pemotongan dan pembentukan material dengan presisi mikron.</p>
+                        </div>
+                        <a href="#contact" class="text-brand-orange font-semibold hover:text-orange-700 text-sm flex items-center">
+                            Minta Spesifikasi <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden group h-56">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Lengan Robot Otomatisasi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0F2C59/FFFFFF?text=Otomatisasi+Industri'">
+                        <span class="absolute top-4 left-4 bg-brand-blue text-white text-xs px-3 py-1 rounded-full font-semibold">Otomatisasi</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-brand-blue mb-2">Sistem Robotika Industri</h4>
+                            <p class="text-slate-600 text-sm mb-4">Integrasi sistem robot modern untuk pengelasan, perakitan, dan penanganan material otomatis secara kontinu.</p>
+                        </div>
+                        <a href="#contact" class="text-brand-orange font-semibold hover:text-orange-700 text-sm flex items-center">
+                            Minta Spesifikasi <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden group h-56">
+                        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80" alt="Peralatan Kompresor & Hidrolik" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0F2C59/FFFFFF?text=Kompresor+Heavy+Duty'">
+                        <span class="absolute top-4 left-4 bg-brand-blue text-white text-xs px-3 py-1 rounded-full font-semibold">Power System</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-brand-blue mb-2">Kompresor & Hidrolik Heavy-Duty</h4>
+                            <p class="text-slate-600 text-sm mb-4">Pneumatik industrial dan kompresor daya tinggi hemat energi untuk menunjang daya operasional pabrik.</p>
+                        </div>
+                        <a href="#contact" class="text-brand-orange font-semibold hover:text-orange-700 text-sm flex items-center">
+                            Minta Spesifikasi <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services List Grid -->
+                <div class="md:col-span-2 lg:col-span-3 bg-white rounded-2xl p-8 shadow-md border border-slate-200 mt-6">
+                    <h4 class="text-2xl font-bold text-brand-blue mb-6 text-center">Layanan Tambahan Kami</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
+                            <i class="fas fa-wrench text-2xl text-brand-orange mb-3"></i>
+                            <h5 class="font-bold text-brand-blue mb-1">Perawatan & Kalibrasi</h5>
+                            <p class="text-slate-600 text-xs">Servis rutin dan kalibrasi akurat agar efisiensi mesin tetap optimal.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
+                            <i class="fas fa-cogs text-2xl text-brand-orange mb-3"></i>
+                            <h5 class="font-bold text-brand-blue mb-1">Suku Cadang Asli</h5>
+                            <p class="text-slate-600 text-xs">Ketersediaan suku cadang asli pabrikan yang lengkap dan bergaransi.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
+                            <i class="fas fa-user-gear text-2xl text-brand-orange mb-3"></i>
+                            <h5 class="font-bold text-brand-blue mb-1">Pelatihan Operator</h5>
+                            <p class="text-slate-600 text-xs">Modul pelatihan teknis langsung bagi tim operasional pabrik Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements & Stats -->
+    <section id="achievements" class="py-16 bg-brand-blue text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brand-orange mb-2">500+</div>
+                    <div class="text-sm font-medium text-slate-300">Unit Mesin Terpasang</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brand-orange mb-2">120+</div>
+                    <div class="text-sm font-medium text-slate-300">Klien Mitra Pabrik</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brand-orange mb-2">99.8%</div>
+                    <div class="text-sm font-medium text-slate-300">Kepuasan Pelanggan</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brand-orange mb-2">24/7</div>
+                    <div class="text-sm font-medium text-slate-300">Dukungan Teknis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info & Location Map -->
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Hubungi Kami</h2>
+                    <h3 class="text-3xl font-bold text-brand-blue mb-6">Mari Diskusikan Kebutuhan Mesin Industri Anda</h3>
+                    <p class="text-slate-600 mb-8">Tim spesialis teknis kami siap memberikan saran terbaik dan rencana penawaran harga sesuai skala operasional bisnis Anda.</p>
+
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-brand-orange text-xl flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Alamat Kantor & Showroom</h4>
+                                <p class="text-slate-600 text-sm">Kawasan Industri Pulogadung, Jl. Rawa Gelam No. 12, Jakarta Timur, 13930, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-brand-orange text-xl flex-shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Telepon / WhatsApp</h4>
+                                <p class="text-slate-600 text-sm">+62 (21) 555-8989 / +62 812-3456-7890</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-brand-orange text-xl flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Email Resmi</h4>
+                                <p class="text-slate-600 text-sm">sales@wijayamachinery.co.id</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Map Preview -->
+                    <div class="rounded-xl overflow-hidden shadow-md border border-slate-200 h-64 bg-slate-200">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.90163531476903!3d-6.194741395515367!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4b500000001%3A0x123456789abcdef!2sKawasan%20Industri%20Pulogadung!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="bg-brand-lightbg p-8 rounded-2xl border border-slate-200 shadow-md">
+                    <h4 class="text-2xl font-bold text-brand-blue mb-2">Kirim Pesan atau Penawaran</h4>
+                    <p class="text-slate-500 text-sm mb-6">Isi formulir di bawah ini, tim kami akan merespons dalam 1x24 jam.</p>
+
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Nama Lengkap *</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition" placeholder="Budi Santoso">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Email Perusahaan *</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition" placeholder="budi@perusahaan.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Nomor Telepon / WA *</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition" placeholder="08123456789">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Kategori Produk yang Diminta</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition">
+                                <option>Mesin CNC & Bubut Presisi</option>
+                                <option>Sistem Robotika Industri</option>
+                                <option>Kompresor & Hidrolik</option>
+                                <option>Layanan Perawatan / Sparepart</option>
+                                <option>Konsultasi Umum</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Pesan / Detail Kebutuhan *</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition" placeholder="Jelaskan kebutuhan spesifik mesin atau pertanyaan Anda..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-orange hover:bg-orange-600 text-white font-bold py-3.5 rounded-lg shadow-md transition duration-200">
+                            Kirim Pertanyaan
+                        </button>
+                    </form>
+
+                    <!-- Success Message Container -->
+                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 border border-green-300 text-green-800 rounded-lg text-sm text-center">
+                        <i class="fas fa-check-circle text-lg mr-2"></i> Pesan Anda berhasil terkirim! Tim kami akan segera menghubungi Anda.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-brand-orange rounded-lg flex items-center justify-center text-white font-bold">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <span class="font-extrabold text-lg text-white">WIJAYA MACHINERY</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-4">Solusi perlengkapan mesin industri presisi tinggi dan terpercaya di Indonesia.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h5 class="text-white font-bold text-sm mb-4">Navigasi</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-brand-orange transition">Beranda</a></li>
+                        <li><a href="#about" class="hover:text-brand-orange transition">Tentang Kami</a></li>
+                        <li><a href="#products" class="hover:text-brand-orange transition">Produk & Layanan</a></li>
+                        <li><a href="#achievements" class="hover:text-brand-orange transition">Keunggulan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div>
+                    <h5 class="text-white font-bold text-sm mb-4">Kategori Produk</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#products" class="hover:text-brand-orange transition">Mesin CNC</a></li>
+                        <li><a href="#products" class="hover:text-brand-orange transition">Sistem Otomatisasi</a></li>
+                        <li><a href="#products" class="hover:text-brand-orange transition">Kompresor Industri</a></li>
+                        <li><a href="#products" class="hover:text-brand-orange transition">Spareparts Original</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Certification -->
+                <div>
+                    <h5 class="text-white font-bold text-sm mb-4">Sertifikasi</h5>
+                    <p class="text-xs mb-2">Tersertifikasi ISO 9001:2015 untuk Sistem Manajemen Mutu Manufaktur.</p>
+                    <div class="flex space-x-2 text-xs text-slate-300">
+                        <span class="bg-slate-800 px-2 py-1 rounded">ISO 9001</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">OHSAS 18001</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 PT. Wijaya Machinery. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic for interactivity -->
+    <script>
+        // Toggle Mobile Navigation Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('formSuccess');
+            const form = document.getElementById('contactForm');
+            
+            // Show inline success message
+            successMsg.classList.remove('hidden');
+            form.reset();
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
